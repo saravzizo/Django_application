@@ -1,3 +1,4 @@
+{% block content %}
 <html>
     <head>
         <title>
@@ -8,12 +9,14 @@
     </head>
     </head>
     <body>
-       
-        <p class="h2">Login Successfull! {{ mydata.username }} </p>
-        <p>Back to <a href="/login">Login</a></p>
-
-        {% for x in mydata %}
-         <li>{{ x.username }} {{ x.password }}</li>
-        {% endfor %}
+        <div class="justify-content-end d-flex bg-secondary">
+            <a class="nav-item text-danger " href="/login">Login</a>
+        </div>
+        
+        <div class="container navbar-brand d-flex flex-column align-items-center ">
+             <p class="h4 nav-item ">Login Successfull! {{var1.username}} </p>
+        </div>
+        
     </body>
 </html>
+{% endblock %}
