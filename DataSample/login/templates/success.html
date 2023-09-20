@@ -8,16 +8,15 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     </head>
-    <body>
-        <div class="justify-content-end d-flex bg-secondary">
-            <a class="nav-item text-danger " href="/login">Login</a>
+    <body class="bg-secondary">
+        <div class="bg-dark d-flex justify-content-end p-3">
+            <a class=" text-danger text-decoration-none " href="/login">Logout</a>
+        </div> 
+        <div class="container d-flex flex-column align-items-center my-5 ">
+            <p class="h4 mb-4 ">Login Successfull</p>
+            <span class="h6">Hi<span class="text-light"> {{var1.username}}</span> Welcome to our page </span>
+            
         </div>
-        
-        <div class="container navbar-brand d-flex flex-column align-items-center ">
-             <p class="h4 nav-item ">Login Successfull! {{var1.username}} </p>
-        </div>
-        
-        
     </body>
 </html>
 {% endblock %}

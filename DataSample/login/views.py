@@ -6,7 +6,7 @@ from django.template import loader
   
 #     return render(request,"index.html")
 def Home(request):
-    return HttpResponse("home")
+    return render(request, 'home.html')
       
 global var1   
 def Login(request):
