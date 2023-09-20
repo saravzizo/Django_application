@@ -30,3 +30,5 @@ def view_data(request):
   }
   
   return HttpResponse(template.render(context, request))
+
+fuilaefoj
