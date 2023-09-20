@@ -28,4 +28,5 @@ def view_data(request):
   context = {
     'var1' : mydata
   }
+  
   return HttpResponse(template.render(context, request))
